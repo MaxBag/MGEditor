@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MGReader</title>
+		<!-- include the site stylesheet -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" type="text/css" href="css/all.css" /> 
+	<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header id="top-header">
+			<div class="wrapp-win-set">
+				<ul class="window-settings">
+				    <li class="fa window-settings__battery" aria-hidden="true" data-tooltip="Battary"></li>
+					<li class="fa fa-window-minimize min" data-tooltip="Minimize window"></li>
+					<li class="fa fa-window-maximize max" data-tooltip="Maximize window"></li>
+					<li class="fa fa-window-close-o close" data-tooltip="Close window"></li>
+				</ul>
+			</div>
+			<div class="wrapp-style-test">
+			<div class="style-text">
+				<ul class="edit-menu-header">
+					<li class="copy-item-header fa fa-files-o" data-tooltip="Copy"></li>
+					<li class="cut-item-header fa fa-scissors" data-tooltip="Cut"></li>
+					<li class="delete-item-header fa fa-trash-o" data-tooltip="Delete"></li>
+				</ul>
+				<ul class="cancelation">
+					<li class="undo fa fa-undo" data-tooltip="Undo"></li>
+					<li class="redo fa fa-repeat" data-tooltip="Repeat"></li>
+				</ul>
+				<ul class="text-transf">
+					<li class="text-bold fa fa-bold" data-tooltip="Bold"></li>
+					<li class="text-italic fa fa-italic" data-tooltip="Italic"></li>
+					<li class="text-underline fa fa-underline" data-tooltip="Underline"></li>
+					<li class="text-through fa fa-strikethrough" data-tooltip="Strikethrough"></li>
+					<li class="text-color fa fa-font" style="color: #000;" data-tooltip="Color"></li>
+					<li class="text-color-bg fa fa-font" style="background: #fff;" data-tooltip="Background"></li>
+					<select class="text-font" data-tooltip="Font">
+						<option value="Arial">Arial</option>
+						<option value="Comic Sans MS">Comic Sans MS</option>
+						<option value="Courier New">Courier New</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Impact">Impact</option>
+						<option value="Times New Roman">Times New Roman</option>
+						<option value="Trebuchet MS">Trebuchet MS</option>
+						<option value="Verdana">Verdana</option>
+					</select>
+					<select class="text-size" data-tooltip="Size">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+					</select>
+					<select class="text-heading" data-tooltip="Heading">
+						<option value="H1">Heading1</option>
+						<option value="H2">Heading2</option>
+						<option value="H3">Heading3</option>
+						<option value="H4">Heading4</option>
+						<option value="H5">Heading5</option>
+						<option value="H6">Heading6</option>
+					</select>
+				</ul>
+				<ul class="text-index">
+				  <li class="text-super fa fa-superscript" data-tooltip="Sup Text"></li>
+				  <li class="text-sub fa fa-subscript" data-tooltip="Sub Text"></li>
+				</ul>
+				<ul class="text-justify">
+					<li class="text-left fa fa-align-left" data-tooltip="Left Align"></li>
+					<li class="text-center fa fa-align-center" data-tooltip="Center Align"></li>
+					<li class="text-right fa fa-align-right" data-tooltip="Right Align"></li>
+					<li class="text-full fa fa-align-justify" data-tooltip="Justify Align"></li>
+				</ul>
+				<ul class="text-indentation">
+					<li class="text-indent fa fa-indent" data-tooltip="Indent"></li>
+					<li class="text-outdent fa fa-outdent" data-tooltip="Outdent"></li>
+				</ul>
+				<ul class="text-list">
+				  <li class="text-list-ol fa fa-list-ol" data-tooltip="Ordered List"></li>
+				  <li class="text-list-ul fa fa-list-ul" data-tooltip="Unordered List"></li>
+				  <li class="text-paragraph fa fa-paragraph" data-tooltip="Paragrahp"></li>
+				</ul>
+				<button class="text-link fa fa-link" data-tooltip="Link"></button>
+				<button class="text-broken-link fa fa-chain-broken" data-tooltip="Broken Link"></button>
+				<button class="inserted-image fa fa-file-image-o" data-tooltip="Image"></button>
+				
+			</div>
+			<div>
+		</header>
+		<div class="content-wrapper">
+			<iframe class="content" name ="editField" spellcheck="false" wrap="hard"></iframe>
+		</div>
+		<div class="contextmenu">
+			<div class="edit-menu">
+				<div class="copy-item">Copy</div>
+				<div class="paste-item">Paste</div>
+				<div class="cut-item">Cut</div>
+			</div>
+			<div class="color-item">Color</div>
+			<div class="style-item">Style
+				<div class="style-italic">Italic</div>
+			</div>
+		</div>
+		<div class="pallete">
+			<div class="pallete-row1">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<div class="palette-colorswatch" title="black" style="background-color: rgb(0, 0, 0);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="dark-grey(4)" style="background-color: rgb(67, 67, 67);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="dark-grey(3)" style="background-color: rgb(102, 102, 102);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="dark-grey(2)" style="background-color: rgb(153, 153, 153);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="dark-grey(1)" style="background-color: rgb(183, 183, 183);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="grey" style="background-color: rgb(204, 204, 204);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-grey(1)" style="background-color: rgb(217, 217, 217);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-grey(2)" style="background-color: rgb(239, 239, 239);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-grey(3)" style="background-color: rgb(243, 243, 243);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="white" style="background-color: rgb(255, 255, 255);"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pallete-row2">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+							  <div class="palette-colorswatch" title="бордовый" style="background-color: rgb(152, 0, 0);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="red" style="background-color: rgb(255, 0, 0);"></div>
+							</td>
+							<td>
+							  <div class="palette-colorswatch" title="orange" style="background-color: rgb(255, 153, 0);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="yellow" style="background-color: rgb(255, 255, 0);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="green" style="background-color: rgb(0, 255, 0);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="бирюзовый" style="background-color: rgb(0, 255, 255);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="cyan" style="background-color: rgb(74, 134, 232);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="blue" style="background-color: rgb(0, 0, 255);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="pink" style="background-color: rgb(153, 0, 255);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="пурпурный" style="background-color: rgb(255, 0, 255);"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pallete-row3">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+							  <div class="palette-colorswatch" title="бордовый(3)" style="background-color: rgb(230, 184, 175);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-red(3)" style="background-color: rgb(244, 204, 204);"></div>
+							</td>
+							<td>
+							  <div class="palette-colorswatch" title="light-orange(3)" style="background-color: rgb(252, 229, 205);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-yellow(3)" style="background-color: rgb(255, 242, 204);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-green(3)" style="background-color: rgb(217, 234, 211);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-бирюзовый(3)" style="background-color: rgb(208, 224, 227);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-cyan(3)" style="background-color: rgb(201, 218, 248);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-blue(3)" style="background-color: rgb(207, 226, 243);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-pink(3)" style="background-color: rgb(217, 210, 233);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-пурпурный(3)" style="background-color: rgb(234, 209, 220);"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pallete-row4">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+							  <div class="palette-colorswatch" title="бордовый" style="background-color: rgb(230, 184, 175);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-red" style="background-color: rgb(244, 204, 204);"></div>
+							</td>
+							<td>
+							  <div class="palette-colorswatch" title="light-orange" style="background-color: rgb(252, 229, 205);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-yellow" style="background-color: rgb(255, 242, 204);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-green" style="background-color: rgb(217, 234, 211);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-бирюзовый" style="background-color: rgb(208, 224, 227);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-cyan" style="background-color: rgb(201, 218, 248);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-blue" style="background-color: rgb(207, 226, 243);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-pink" style="background-color: rgb(217, 210, 233);"></div>
+							</td>
+							<td>
+								<div class="palette-colorswatch" title="light-пурпурный" style="background-color: rgb(234, 209, 220);"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="toUp fa fa-arrow-circle-up"></div>
+		<div class="warn-block">
+			<div class="warn-block-close fa fa-times"></div>
+			<div class="info-block-warn fa fa-info-circle"> Warning</div>
+			<div class="warn-block-output"></div>
+		</div>
+	</body>
+</html>
